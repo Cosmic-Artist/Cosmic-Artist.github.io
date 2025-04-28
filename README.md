@@ -1,124 +1,152 @@
-# Julian Smith Portfolio
 
-Welcome to my Programming I Portfolio!  
-This site showcases major projects and selected assignments I completed during the semester, built using C#, WPF, and fundamental programming principles.
+# Julian Smith Programming Portfolio
+An example portfolio for Programming I at Columbia College Chicago.
 
----
+## 🐻 C#
 
-# 📂 Projects
-
-## Project 2: Card Games Collection
-
-**Description**:  
-Developed a C# console application offering multiple card games (Higher or Lower, Same or Different, Highest Match).  
-Each game uses a shared Deck and Player system, emphasizing modular design.
-
-**Technical Details**:
-- Language: C#
-- Concepts: Interfaces (`IGame`), Object-Oriented Programming (OOP), Polymorphism
-- Unique Solutions:
-  - Built a reusable `Deck` and `Card` system.
-  - Implemented multiple card games from the same base code.
-  - Menu system lets users choose which game to play dynamically.
-
-**Screenshots**:  
-![Project 2 Screenshot](images/Project%202.png)
+> 🏅 PROG 101 - Programming I
 
 ---
 
-## Project 3: Word Guessing Game (Ordle Clone)
+### 🎮 Ordle - Word Guessing Game
 
-**Description**:  
-Built a Word Guessing Game using WPF and C#.  
-The user must guess a secret five-letter word, receiving feedback after each guess showing correct letters and placement.
+A WPF word-guessing game where users guess a secret 5-letter word, inspired by Wordle.
 
-**Technical Details**:
-- Language: C#
-- Framework: WPF (.NET 8.0)
-- Concepts: Event-driven programming, GUI Development, File I/O
-- Unique Solutions:
-  - Dynamic word bank loaded from external text files.
-  - Clear separation of game logic (`GameEngine.cs`) and UI (`MainWindow.xaml`).
+* Built with WPF and C#
+* Random solution word loaded from external text file
+* Color-coded hints (Green = Correct, Yellow = Wrong Place, Grey = Incorrect)
 
-**Screenshots**:  
-![Project 3 Screenshot](images/project%203%20game.png)
+<img width="600" alt="Ordle Game Screenshot" src="images/Ordle%20game.png" />
 
 ---
 
-# 📚 Assignments
+### ☕ Coffee Ordering App
 
-## Ordle (Wordle Clone Assignment)
+A console-based simulation where users order customized coffee drinks.
 
-**Description**:  
-Created a simplified Wordle game where players guess a five-letter secret word within limited tries.
+* Interface-based design
+* Demonstrates Object-Oriented Programming (OOP) principles
+* Hot and Cold drink selections with temperature simulation
 
-**Technical Details**:
-- Language: C#
-- Framework: WPF
-- Concepts: String manipulation, File Input, GUI Events
-- Unique Solutions:
-  - Implemented automatic win/lose logic.
-  - Loaded word list dynamically from text files.
-
-**Screenshots**:  
-![Ordle Assignment Screenshot](images/Ordle%20game.png)
+<img width="600" alt="Coffee Game Screenshot" src="images/Cofee%20game.png" />
 
 ---
 
-## Coffee (Coffee Order App)
+### 📈 Stocks Event Handler App
 
-**Description**:  
-Designed a coffee ordering simulation where customers select different sizes and types of drinks.
+A console stock market simulation where prices update live based on C# events and delegates.
 
-**Technical Details**:
-- Language: C#
-- Concepts: Interfaces, Delegates, Object-Oriented Programming
-- Unique Solutions:
-  - Used interfaces to separate beverage sizes and drink types.
-  - Created a flexible system for easily adding new menu items.
+* Uses event-driven programming
+* Displays real-time stock price changes
+* Console application built in C#
 
-**Screenshots**:  
-![Coffee Screenshot](images/Cofee%20game.png)
+<img width="600" alt="Stocks App Screenshot" src="images/Stock%20app.png" />
 
 ---
 
-## Stocks (Stock Market Simulation App)
+### 🃏 Project 2 - Card Games Collection
 
-**Description**:  
-Developed a simulation of a stock exchange using events and delegates to model live stock price changes.
+A C# console application featuring a collection of simple card games.
 
-**Technical Details**:
-- Language: C#
-- Concepts: Events, Delegates, Class-based Design, Real-time Simulation
-- Unique Solutions:
-  - Simulated stock prices that update based on event handlers.
-  - Modeled basic stock trading behaviors in a console application.
+* Play Higher/Lower, Same or Different, and Highest Match
+* Menu-based game selection
+* Reusable `Deck` and `Card` system
 
-**Screenshots**:  
-![Stocks Screenshot](images/Stock%20app.png)
+<img width="600" alt="Card Games Project Screenshot" src="images/Project%202.png" />
 
 ---
 
-# 🛠️ Additional Information
+### 🖼️ Project 3 - Word Guessing Game WPF
 
-## Tools Used
+A refined version of Ordle made with advanced WPF UI techniques.
+
+* GUI created with WPF (XAML)
+* Real-time validation
+* Fully dynamic word loading
+
+<img width="600" alt="Project 3 Game Screenshot" src="images/project%203%20game.png" />
+
+---
+
+## 🛠️ Tools Used
 - Visual Studio 2022
-- C# (.NET 8.0 and .NET Framework 4.7.2)
+- C# (.NET 8.0)
 - GitHub
-- WPF for GUI applications
-- GitHub Pages for hosting
-
-## Key Learning Outcomes
-- Mastered core C# programming concepts like classes, interfaces, delegates, and events.
-- Gained experience building desktop GUI applications using WPF and XAML.
-- Strengthened skills in file I/O operations and user-driven program designs.
-- Implemented multiple complete applications individually.
+- GitHub Pages
+- WPF for GUI Development
+- Console Applications for Event-Driven Programming
 
 ---
 
-# 🔗 Links
-- [GitHub Profile - Cosmic-Artist](https://github.com/Cosmic-Artist)
-- [Live Portfolio Website](https://cosmic-artist.github.io)
+## 🔗 Links
 
-> Portfolio built using GitHub Pages, Jekyll/Markdown, and GitHub repositories.
-> Updated for Programming I Semester Submission.
+- [GitHub Profile - Cosmic-Artist](https://github.com/Cosmic-Artist)
+- [Live Portfolio Site - Coming Soon!](https://cosmic-artist.github.io)
+
+---
+
+## 📜 Code Sample (from Ordle Project)
+
+```csharp
+private void Button_Click(object sender, RoutedEventArgs e)
+{
+    if (currentRow >= rows)
+    {
+        GameMessage.Text = "Game Over!";
+        return;
+    }
+
+    string guess = PlayerInput.Text.Trim().ToLower();
+    if (guess.Length != cols)
+    {
+        GameMessage.Text = "Enter a 5-letter word!";
+        return;
+    }
+
+    if (!engine.IsWordInList(guess))
+    {
+        GameMessage.Text = "Invalid word!";
+        return;
+    }
+
+    for (int j = 0; j < cols; j++)
+    {
+        TextBlocks[currentRow, j].Text = guess[j].ToString().ToUpper();
+        if (guess[j] == engine.Solution[j])
+        {
+            TextBlocks[currentRow, j].Background = Brushes.Green;
+        }
+        else if (engine.Solution.Contains(guess[j]))
+        {
+            TextBlocks[currentRow, j].Background = Brushes.Yellow;
+        }
+        else
+        {
+            TextBlocks[currentRow, j].Background = Brushes.LightGray;
+        }
+    }
+
+    if (guess == engine.Solution)
+    {
+        GameMessage.Text = "You Win!";
+        SubmitButton.IsEnabled = false;
+    }
+    else
+    {
+        currentRow++;
+        if (currentRow == rows)
+        {
+            GameMessage.Text = $"Out of tries! Solution: {engine.Solution.ToUpper()}";
+            SubmitButton.IsEnabled = false;
+        }
+    }
+
+    PlayerInput.Clear();
+}
+```
+
+> Code sample from the Ordle word guessing game project built in C# WPF.
+
+---
+
+For more details on Markdown formatting, see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
