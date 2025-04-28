@@ -22,7 +22,7 @@ Each game uses a shared Deck and Player system, emphasizing modular design.
   - Menu system lets users choose which game to play dynamically.
 
 **Screenshots**:  
-![Project 2 Screenshot](images/project2-screenshot.png)
+![Project 2 Screenshot](images/Project%202.png)
 
 ---
 
@@ -41,7 +41,7 @@ The user must guess a secret five-letter word, receiving feedback after each gue
   - Clear separation of game logic (`GameEngine.cs`) and UI (`MainWindow.xaml`).
 
 **Screenshots**:  
-![Project 3 Screenshot](images/project3-screenshot.png)
+![Project 3 Screenshot](images/project%203%20game.png)
 
 ---
 
@@ -61,7 +61,7 @@ Created a simplified Wordle game where players guess a five-letter secret word w
   - Loaded word list dynamically from text files.
 
 **Screenshots**:  
-![Ordle Assignment Screenshot](images/ordle-screenshot.png)
+![Ordle Assignment Screenshot](images/Ordle%20game.png)
 
 ---
 
@@ -78,7 +78,7 @@ Designed a coffee ordering simulation where customers select different sizes and
   - Created a flexible system for easily adding new menu items.
 
 **Screenshots**:  
-![Coffee Screenshot](images/coffee-screenshot.png)
+![Coffee Screenshot](images/Cofee%20game.png)
 
 ---
 
@@ -95,7 +95,7 @@ Developed a simulation of a stock exchange using events and delegates to model l
   - Modeled basic stock trading behaviors in a console application.
 
 **Screenshots**:  
-![Stocks Screenshot](images/stocks-screenshot.png)
+![Stocks Screenshot](images/Stock%20app.png)
 
 ---
 
@@ -114,16 +114,11 @@ Developed a simulation of a stock exchange using events and delegates to model l
 - Strengthened skills in file I/O operations and user-driven program designs.
 - Implemented multiple complete applications individually.
 
-## UML Diagrams
-(_You can insert screenshots of your Class Diagrams like `ClassDiagram1.cd` here if you want to get extra points._)
-
 ---
 
 # 🔗 Links
 - [GitHub Profile - Cosmic-Artist](https://github.com/Cosmic-Artist)
 - [Live Portfolio Website](https://cosmic-artist.github.io)
-
----
 
 > Portfolio built using GitHub Pages, Jekyll/Markdown, and GitHub repositories.
 > Updated for Programming I Semester Submission.
