@@ -1,107 +1,129 @@
 # Julian Smith Portfolio
 
 Welcome to my Programming I Portfolio!  
-This site showcases major projects and selected assignments I completed this semester.
+This site showcases major projects and selected assignments I completed during the semester, built using C#, WPF, and fundamental programming principles.
 
 ---
 
-## 📂 Projects
+# 📂 Projects
 
-### Project 2: [Title of Your Project 2]
+## Project 2: Card Games Collection
+
 **Description**:  
-This project focuses on building [brief description of Project 2, e.g., "a C# application that manages library books and members."].
+Developed a C# console application offering multiple card games (Higher or Lower, Same or Different, Highest Match).  
+Each game uses a shared Deck and Player system, emphasizing modular design.
 
 **Technical Details**:
 - Language: C#
-- Features: Classes, Inheritance, Interfaces
-- Unique Solutions: Custom error handling and organized code structure.
+- Concepts: Interfaces (`IGame`), Object-Oriented Programming (OOP), Polymorphism
+- Unique Solutions:
+  - Built a reusable `Deck` and `Card` system.
+  - Implemented multiple card games from the same base code.
+  - Menu system lets users choose which game to play dynamically.
 
 **Screenshots**:  
 ![Project 2 Screenshot](images/project2-screenshot.png)
 
 ---
 
-### Project 3: [Title of Your Project 3]
+## Project 3: Word Guessing Game (Ordle Clone)
+
 **Description**:  
-This project involved developing [brief description of Project 3, e.g., "an inventory tracking system with a graphical WPF interface."].
+Built a Word Guessing Game using WPF and C#.  
+The user must guess a secret five-letter word, receiving feedback after each guess showing correct letters and placement.
 
 **Technical Details**:
 - Language: C#
-- Framework: WPF (Windows Presentation Foundation)
-- Features: MVVM Pattern, Event-driven programming
-- Unique Solutions: Used ObservableCollection for live UI updates.
+- Framework: WPF (.NET 8.0)
+- Concepts: Event-driven programming, GUI Development, File I/O
+- Unique Solutions:
+  - Dynamic word bank loaded from external text files.
+  - Clear separation of game logic (`GameEngine.cs`) and UI (`MainWindow.xaml`).
 
 **Screenshots**:  
 ![Project 3 Screenshot](images/project3-screenshot.png)
 
 ---
 
-## 📚 Assignments
+# 📚 Assignments
 
-### Ordle (Wordle Game Clone)
+## Ordle (Wordle Clone Assignment)
+
 **Description**:  
-Built a simplified Wordle game where players guess a secret word within limited tries.
+Created a simplified Wordle game where players guess a five-letter secret word within limited tries.
 
 **Technical Details**:
 - Language: C#
-- Concepts Used: String manipulation, loops, conditionals
-- Unique Challenges: Built custom validation for word matches and player feedback.
+- Framework: WPF
+- Concepts: String manipulation, File Input, GUI Events
+- Unique Solutions:
+  - Implemented automatic win/lose logic.
+  - Loaded word list dynamically from text files.
 
 **Screenshots**:  
-![Ordle Screenshot](images/ordle-screenshot.png)
+![Ordle Assignment Screenshot](images/ordle-screenshot.png)
 
 ---
 
-### Coffee (Coffee Order App)
+## Coffee (Coffee Order App)
+
 **Description**:  
-Created an app that simulates coffee ordering with multiple size and add-on options.
+Designed a coffee ordering simulation where customers select different sizes and types of drinks.
 
 **Technical Details**:
 - Language: C#
-- Concepts: Classes, Interfaces, Delegates
-- Unique Solutions: Implemented flexible add-on pricing and modular menu options.
+- Concepts: Interfaces, Delegates, Object-Oriented Programming
+- Unique Solutions:
+  - Used interfaces to separate beverage sizes and drink types.
+  - Created a flexible system for easily adding new menu items.
 
 **Screenshots**:  
-![Coffee App Screenshot](images/coffee-screenshot.png)
+![Coffee Screenshot](images/coffee-screenshot.png)
 
 ---
 
-### Stocks (Event Handler Project)
+## Stocks (Stock Market Simulation App)
+
 **Description**:  
-Developed a stock price simulation using event handlers and delegates for dynamic updates.
+Developed a simulation of a stock exchange using events and delegates to model live stock price changes.
 
 **Technical Details**:
 - Language: C#
-- Concepts: Events, Delegates, Object-Oriented Programming
-- Unique Solutions: Created a dynamic update mechanism to simulate real-time stock changes.
+- Concepts: Events, Delegates, Class-based Design, Real-time Simulation
+- Unique Solutions:
+  - Simulated stock prices that update based on event handlers.
+  - Modeled basic stock trading behaviors in a console application.
 
 **Screenshots**:  
-![Stocks Event Handler Screenshot](images/stocks-screenshot.png)
+![Stocks Screenshot](images/stocks-screenshot.png)
 
 ---
 
-## 🧰 Additional Information
+# 🛠️ Additional Information
 
-- **Built With**:
-  - Visual Studio 2022
-  - GitHub Pages
-  - WPF Framework
-  - C#
+## Tools Used
+- Visual Studio 2022
+- C# (.NET 8.0 and .NET Framework 4.7.2)
+- GitHub
+- WPF for GUI applications
+- GitHub Pages for hosting
 
-- **UML Diagrams**:
-  - (_Insert UML diagrams if available._)
+## Key Learning Outcomes
+- Mastered core C# programming concepts like classes, interfaces, delegates, and events.
+- Gained experience building desktop GUI applications using WPF and XAML.
+- Strengthened skills in file I/O operations and user-driven program designs.
+- Implemented multiple complete applications individually.
 
-- **Challenges Overcome**:
-  - Implemented event-driven programming efficiently.
-  - Gained stronger understanding of data binding and MVVM for UI projects.
-
----
-
-## 🔗 Connect with Me
-- [GitHub](https://github.com/Cosmic-Artist)
-- [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile) (_optional if you want to add it later_)
+## UML Diagrams
+(_You can insert screenshots of your Class Diagrams like `ClassDiagram1.cd` here if you want to get extra points._)
 
 ---
 
-> Portfolio built with GitHub Pages and Markdown.  
-> View my live portfolio: [https://cosmic-artist.github.io](https://cosmic-artist.github.io)
+# 🔗 Links
+- [GitHub Profile - Cosmic-Artist](https://github.com/Cosmic-Artist)
+- [Live Portfolio Website](https://cosmic-artist.github.io)
+
+---
+
+> Portfolio built using GitHub Pages, Jekyll/Markdown, and GitHub repositories.
+> Updated for Programming I Semester Submission.
