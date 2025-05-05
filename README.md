@@ -16,7 +16,8 @@ A WPF word-guessing game where users guess a secret 5-letter word, inspired by W
 * Random solution word loaded from external text file
 * Color-coded hints (Green = Correct, Yellow = Wrong Place, Grey = Incorrect)
 
-<img width="600" alt="Ordle Game Screenshot" src="images/Ordle%20game.png" />
+<img width="948" alt="Ordle game" src="https://github.com/user-attachments/assets/d0a75591-b20e-4c69-b5af-e8dce156c531" />
+
 
 ---
 
@@ -27,8 +28,8 @@ A console-based simulation where users order customized coffee drinks.
 * Interface-based design
 * Demonstrates Object-Oriented Programming (OOP) principles
 * Hot and Cold drink selections with temperature simulation
+<img width="576" alt="Cofee game" src="https://github.com/user-attachments/assets/d62f13c0-99d8-4353-a819-5b12002e4999" />
 
-<img width="600" alt="Coffee Game Screenshot" src="images/Cofee%20game.png" />
 
 ---
 
@@ -40,7 +41,8 @@ A console stock market simulation where prices update live based on C# events an
 * Displays real-time stock price changes
 * Console application built in C#
 
-<img width="600" alt="Stocks App Screenshot" src="images/Stock%20app.png" />
+<img width="798" alt="Stock app" src="https://github.com/user-attachments/assets/d23ae856-1ac7-41fa-b3d8-72160afde8bb" />
+
 
 ---
 
@@ -52,7 +54,8 @@ A C# console application featuring a collection of simple card games.
 * Menu-based game selection
 * Reusable `Deck` and `Card` system
 
-<img width="600" alt="Card Games Project Screenshot" src="images/Project%202.png" />
+
+<img width="763" alt="Project 2" src="https://github.com/user-attachments/assets/3339a253-bd8c-42d8-9f9d-eacb311942de" />
 
 ---
 
@@ -64,7 +67,8 @@ A refined version of Ordle made with advanced WPF UI techniques.
 * Real-time validation
 * Fully dynamic word loading
 
-<img width="600" alt="Project 3 Game Screenshot" src="images/project%203%20game.png" />
+<img width="875" alt="project 3 game" src="https://github.com/user-attachments/assets/551cc0a0-9e1f-4330-9d8d-0b601c27a284" />
+
 
 ---
 
